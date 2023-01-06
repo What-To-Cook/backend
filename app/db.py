@@ -69,7 +69,10 @@ class MongoDatabase:
         return list(
             self._client[self._db][self._recipes_collection].find(
                 query,
-                {},
+                {
+                    '_id': 0,
+                    'unique_ingredients': 0,
+                },
             ),
         )
 
