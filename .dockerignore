@@ -1,0 +1,9 @@
+.git
+.mypy_cache
+.github/
+
+.env
+.flake8
+.gitignore
+LICENSE
+README.md
