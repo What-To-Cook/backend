@@ -22,5 +22,5 @@ jobs:
           poetry-version: 1.1.13
       - run: poetry config virtualenvs.create false
       - run: poetry install --no-interaction --no-ansi
-      - run: flake8 recipe_parser
-      - run: mypy recipe_parser
+      - run: flake8 app/ scripts/
+      - run: mypy app/ scripts/
